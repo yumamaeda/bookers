@@ -26,7 +26,7 @@ class TodolistsController < ApplicationController
          else
         flash[:notice] = "error"
         @books = Book.all
-        render action: :index
+        render action: :edit
     end
     end
 
