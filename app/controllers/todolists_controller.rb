@@ -18,6 +18,18 @@ class TodolistsController < ApplicationController
        end
     end
 
+    def update
+        @book = Book.find(params[:id])
+        if @book.update(book_params)
+        flash[:notice] = "successfully"
+        redirect_to book_path(book.id)
+         else
+        flash[:notice] = "error"
+        @books = Book.all
+        render action: :index
+    end
+    end
+
     def index
     	@books = Book.all
         @book = Book.new
@@ -31,16 +43,7 @@ class TodolistsController < ApplicationController
         @book = Book.find(params[:id])
     end
 
-    def update
-    	book = Book.find(params[:id])
-        if book.update(book_params)
-        flash[:notice] = "successfully"
-        redirect_to book_path(book.id)
-         else
-        flash[:notice] = "error"
-        redirect_to books_path
-    end
-    end
+
     def destroy
         book = Book.find(params[:id]) #データ(レコード)を1件取得
         if book.destroy #データ（レコード）を削除
