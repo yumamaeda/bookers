@@ -1,24 +1,11 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+アプリ名--Bookers
+対象OS--Mac/windows
+開発環境/言語--Sublime Text/Ruby/Ruby on Rails
+機能概要(機能一覧)--本の感想を誰でも投稿できるアプリです。そのため。投稿機能・一覧機能・消去機能・編集機能があります。
+フレームワークのバージョン--Rails 5.2.4.3
+テーブル定義(ER図)など--[No(ナンバー)][title(本の名前)][Body(本の評価)]
+コンセプト--誰でも本の感想を気軽に投稿することができるwebアプリです。
+こだわったポイント--一覧画面から投稿できるようになっており、ユーザーが使用しやすくなっている。
+アドバイスして欲しいポイント--機能を加えることに精一杯で、デザイン面が乏しいため、ユーザーが使用しやすいデザインのアドバイスをいただきたい。また、よりアプリを使いやすくするにはどのような機能が必要なのかもご教授いただきたいです。
+デザイン面に関して見て欲しいポイント--投稿に成功すると[Success]と表示される点
+自己評価--機能に関しては十分だと思います。しかし、白黒で無機質なアプリとなっているのでデザイン面が乏しい。デザインを変更し、より見やすく使いやすいアプリにしたい。
